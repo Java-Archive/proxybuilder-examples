@@ -14,6 +14,7 @@ part of the Builder-MethodCall.
          .build();
 ```
 
+System.out:
  * constructed 2015-11-19T13:46:50.438
  * Proxy created 2015-11-19T13:46:50.450
  * ServiceV001Impl - invoke 2015-11-19T13:46:50.450
@@ -31,6 +32,7 @@ part of the Builder-MethodCall.
         .build();
 ```
 
+System.out:
 * constructed 2015-11-19T13:49:58.644
 * Proxy created 2015-11-19T13:49:58.658
 * PreAction = 2015-11-19T13:49:58.658
@@ -49,6 +51,7 @@ Now we will use PostActions. PostActions are invoked after the delegator method 
         .build();
 ```
 
+System.out:
 * constructed 2015-11-19T13:54:54.453
 * Proxy created 2015-11-19T13:54:54.468
 * doWork = invoke - 2015-11-19T13:54:54.468
@@ -72,6 +75,7 @@ If the Rule will return true, the delegator-method will be invoked.
         .build();
 ```
 
+System.out:
 * constructed 2015-11-19T13:59:20.751
 * Proxy created 2015-11-19T13:59:20.765
 * checkRule = 2015-11-19T13:59:20.765
@@ -92,6 +96,7 @@ If the Rule will return false, the delegator-method will not be invoked.
         .build();
 ```
 
+System.out:
 * constructed 2015-11-19T14:03:57.070
 * Proxy created 2015-11-19T14:03:57.084
 * checkRule = 2015-11-19T14:03:57.085
@@ -127,7 +132,9 @@ For every Method there will be a Histogramm.
   }
 ```
 
-```
+System.out:
+
+``
 19.11.15 14:11:17 ==============================================================
 -- Histograms ------------------------------------------------------------------
   ServiceV001.doWork
@@ -142,8 +149,6 @@ For every Method there will be a Histogramm.
                 98% <= 59,00
                 99% <= 63,00
               99.9% <= 177,00
-```
-```
 19.11.15 14:11:18 ==============================================================
 -- Histograms ------------------------------------------------------------------
 ServiceV001.doWork
@@ -158,6 +163,6 @@ ServiceV001.doWork
               98% <= 57,00
               99% <= 63,00
             99.9% <= 166,00
-              
-```
+```             
+
 
