@@ -72,8 +72,8 @@
     <url>https://github.com/RapidPM/proxybuilder-examples/issues</url>
   </issueManagement>
   <ciManagement>
-    <system>TravisCI</system>
-    <url>https://travis-ci.org/RapidPM/proxybuilder-examples/</url>
+    <system>TeamCity</system>
+    <url>https://build.rapidpm.org/project.html?projectId=RapidPM_Develop_ProxyBuilderExamples</url>
   </ciManagement>
   <licenses>
     <license>
